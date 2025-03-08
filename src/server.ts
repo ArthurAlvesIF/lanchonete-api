@@ -346,6 +346,9 @@ fastify.delete("/orderProducts/:id", async (request, reply) => {
   }
 });
 
+fastify.get("/", async (request, reply)=> {
+  return reply.status(200).send({ message: 'Hello world!'})
+})
 // Inicia o servidor
 fastify.listen({ port: 3000 }, (err, address) => {
   if (err) {
