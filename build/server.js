@@ -19,6 +19,7 @@ const sequelize = new sequelize_1.Sequelize("lanchonete", "admin", "ic0SUBVU2Aqj
     host: "mlar-db.c4x26mu8gr8l.us-east-1.rds.amazonaws.com",
     port: 3306,
     dialect: "mysql",
+    dialectModule: require('mysql2')
 });
 // Definição do Model Order
 class Order extends sequelize_1.Model {

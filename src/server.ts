@@ -6,6 +6,7 @@ const sequelize = new Sequelize("lanchonete", "admin", "ic0SUBVU2AqjuQmHgUR6", {
   host: "mlar-db.c4x26mu8gr8l.us-east-1.rds.amazonaws.com",
   port: 3306,
   dialect: "mysql",
+  dialectModule: require('mysql2')
 });
 
 // Interfaces para os Models
